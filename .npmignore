@@ -1,0 +1,7 @@
+lib/bs/
+node_modules/
+test/
+.vscode/
+.merlin
+package-lock.json
+src/**/*.bs.js
