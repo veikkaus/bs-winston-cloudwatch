@@ -1,10 +1,10 @@
 {
   "name": "bs-winston-cloudwatch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Winston Cloudwatch Transport for ReasonML",
   "author": "Kundi team - Veikkaus",
   "license": "MIT",
-  "repository": "github:seprich/bs-winston",
+  "repository": "github:veikkaus/bs-winston-cloudwatch",
   "keywords": [
     "BuckleScript",
     "reasonml",
