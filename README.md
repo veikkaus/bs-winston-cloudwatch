@@ -27,6 +27,6 @@ let logger = Builder.create()
   -> Builder.build;
 
 /*  ... after logging done, flush and close:  */
-kthxbye();
+kthxbye(cb);
 
 ```

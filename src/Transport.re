@@ -37,7 +37,7 @@ module Cloudwatch {
         ~retentionInDays =? retentionInDays,
         ()
       ));
-      let kthxbye = () => kthxbye(transport, _ => {()});
+      let kthxbye = cb => kthxbye(transport, cb);
       (transport, kthxbye);
     };
 }
