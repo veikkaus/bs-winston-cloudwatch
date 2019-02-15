@@ -20,7 +20,7 @@ module Cloudwatch {
   [@bs.send] external kthxbye: BsWinston.Transport.t => (unit => unit) => unit = "";
   let create =
     (~logGroupName, ~logStreamName, ~level=?, ~awsAccessKeyId=?, ~awsSecretKey=?, ~awsRegion=?, ~awsOptions=?,
-     ~jsonMessage=?, ~messageFormatter=?, ~proxyServer=?, ~uploadRate=?, ~errorHandler=?, ~retentionInDays=?, ()) => {
+     ~jsonMessage=?, ~messageFormatter=?, ~proxyServer=?, ~uploadRate=?, ~errorHandler=?, ~retentionInDays=?, ())/*: (BsWinston.Transport.t, (unit => Js.Promise.t(unit)))*/ => {
       let transport = newWinstonCloudwatch(config(
         ~logGroupName = logGroupName,
         ~logStreamName = logStreamName,
@@ -37,7 +37,11 @@ module Cloudwatch {
         ~retentionInDays =? retentionInDays,
         ()
       ));
-      let kthxbye = cb => kthxbye(transport, cb);
+      let kthxbye =
+        () => Js.Promise.make((~resolve, ~reject as _) => {
+          let empty = ();
+          kthxbye(transport, () => resolve(. empty));
+        });
       (transport, kthxbye);
     };
 }

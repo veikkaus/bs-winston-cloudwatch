@@ -18,4 +18,4 @@ let createCloudwatch: (
   ~errorHandler: (Js.t('a) => unit) =?,
   ~retentionInDays: int =?,
   unit
-) => (BsWinston.Transport.t, ((unit => unit) => unit));
+) => (BsWinston.Transport.t, (unit => Js.Promise.t(unit)));
