@@ -17,7 +17,7 @@ module Cloudwatch {
     [@bs.optional] retentionInDays: int
   };
   [@bs.new] [@bs.module] external newWinstonCloudwatch: config('a) => BsWinston.Transport.t = "winston-cloudwatch";
-  [@bs.send] external kthxbye: BsWinston.Transport.t => (unit => unit) => unit = "";
+  [@bs.send] external kthxbye: BsWinston.Transport.t => (unit => unit) => unit = "kthxbye";
   let create =
     (~logGroupName, ~logStreamName, ~level=?, ~awsAccessKeyId=?, ~awsSecretKey=?, ~awsRegion=?, ~awsOptions=?,
      ~jsonMessage=?, ~messageFormatter=?, ~proxyServer=?, ~uploadRate=?, ~errorHandler=?, ~retentionInDays=?, ())/*: (BsWinston.Transport.t, (unit => Js.Promise.t(unit)))*/ => {

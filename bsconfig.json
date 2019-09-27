@@ -1,6 +1,6 @@
 {
   "name": "bs-winston-cloudwatch",
-  "version": "0.5.0",
+  "version": "0.6.1",
   "sources": [
     {
       "dir" : "src",
@@ -13,7 +13,7 @@
   ],
   "package-specs": {
     "module": "commonjs",
-    "in-source": true
+    "in-source": false
   },
   "suffix": ".bs.js",
   "bs-dependencies": [
