@@ -1,6 +1,6 @@
 {
   "name": "bs-winston-cloudwatch",
-  "version": "0.6.2",
+  "version": "0.7.0",
   "description": "Winston Cloudwatch Transport for ReasonML",
   "author": "Kundi team - Veikkaus",
   "license": "MIT",
@@ -16,19 +16,18 @@
   "scripts": {
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
-    "clean": "bsb -clean-world",
-    "test": "npm run clean && npm run build && mocha"
+    "clean": "bsb -clean-world"
   },
   "dependencies": {
-    "winston-cloudwatch": "2.3.2"
+    "winston-cloudwatch": "2.5.0"
   },
   "peerDependencies": {
-    "bs-platform": ">= 5.0.0",
-    "bs-winston": "^0.6.2"
+    "bs-platform": ">= 8.0.0",
+    "bs-winston": "^0.7.0"
   },
   "devDependencies": {
     "bs-mocha": "1.0.0",
-    "bs-platform": "7.2.2",
-    "bs-winston": "0.6.2"
+    "bs-platform": "9.0.2",
+    "bs-winston": "0.7.0"
   }
 }
