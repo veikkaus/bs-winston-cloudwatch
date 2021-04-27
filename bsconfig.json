@@ -1,6 +1,6 @@
 {
   "name": "bs-winston-cloudwatch",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "sources": [
     {
       "dir" : "src",
