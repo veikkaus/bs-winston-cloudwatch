@@ -23,11 +23,11 @@
   },
   "peerDependencies": {
     "bs-platform": ">= 8.0.0",
-    "bs-winston": "^0.7.0"
+    "bs-winston": "^0.7.1"
   },
   "devDependencies": {
     "bs-mocha": "1.0.0",
     "bs-platform": "9.0.2",
-    "bs-winston": "0.7.0"
+    "bs-winston": "0.7.1"
   }
 }
