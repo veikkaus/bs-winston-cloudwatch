@@ -1,6 +1,6 @@
 {
   "name": "bs-winston-cloudwatch",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "description": "Winston Cloudwatch Transport for ReasonML",
   "author": "Kundi team - Veikkaus",
   "license": "MIT",
@@ -23,7 +23,7 @@
   },
   "peerDependencies": {
     "bs-platform": ">= 8.0.0",
-    "bs-winston": "^0.7.1"
+    "bs-winston": "^0.7.2"
   },
   "devDependencies": {
     "bs-mocha": "1.0.0",
